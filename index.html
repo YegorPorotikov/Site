@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Star Raker — 3D Бункер + Мафія в космосі</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Rajdhani:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Твій CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- ====================== ХЕДЕР ====================== -->
+<header class="header">
+  <div class="container">
+    <!-- Логотип + назва (логотип зліва, текст праворуч) -->
+    <div class="header-brand">
+      <div class="logo-placeholder">
+        <!-- Сюди встав свій реальний логотип (рекомендую SVG або PNG 64–80 px) -->
+        <img src="assets/img/Logo.png" alt="Star Raker Logo" class="logo-img">
+        <!-- Якщо логотипу ще немає — тимчасовий круглий плейсхолдер -->
+        <!-- <div class="logo-circle"></div> -->
+      </div>
+      <a href="#" class="site-title">STAR RAKER</a>
+    </div>
+
+    <!-- Навігація -->
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#modes" class="nav-link">Modes</a></li>
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#reviews" class="nav-link">Reviews</a></li>
+        <li><a href="#cta" class="nav-link btn-buy-small">Buy Now</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <!-- ====================== HERO ====================== -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div> <!-- для градієнту/темного оверлею -->
+    
+    <div class="container hero-content">
+      <h1 class="hero-title">STAR RAKER</h1>
+      <p class="hero-subtitle">
+        3D Бункер + Мафія в космосі
+      </p>
+      
+      <div class="hero-buttons">
+        <a href="#" class="btn btn-primary">
+          ГРАТИ DEMO БЕЗКОШТОВНО
+        </a>
+        <a href="#" class="btn btn-secondary">
+          КУПИТИ ЗАРАЗ <span class="discount">-50%</span>
+        </a>
+      </div>
+
+      <!-- Маленькі іконки платформ (опціонально) -->
+      <div class="hero-platforms">
+        <img src="assets/img/steam-icon.svg" alt="Steam" width="36">
+        <img src="assets/img/Itch-Io--Streamline-Font-Awesome.svg" alt="itch.io" width="36">
+        <img src="assets/img/discord-white-icon.svg" alt="Discord" width="36">
+      </div>
+    </div>
+  </section>
+
+<!-- ====================== ПЕРЕМИКАЧ РЕЖИМІВ ====================== -->
+<section id="modes" class="modes-section">
+  <div class="container">
+    <h2 class="section-title">Обери режим гри</h2>
+
+    <!-- Вкладки -->
+    <div class="modes-tabs">
+      <button class="mode-tab active" data-mode="ster">
+        Ster Selection
+      </button>
+      <button class="mode-tab" data-mode="betrayal">
+        Star Betrayal
+      </button>
+    </div>
+
+    <!-- Контент режимів -->
+    <div class="modes-content">
+      <!-- Ster Selection контент -->
+      <div class="mode-panel active" id="ster-panel">
+        <h3>Ster Selection</h3>
+        <p class="mode-description">
+          <p><strong>Game Objective</strong><br>
+A crew of 4 to 16 players is trapped on a dying space station after a galactic cataclysm. Oxygen, food, and power are running out. Each round players must vote to eliminate someone to preserve resources — but only half the crew can survive until rescue arrives. One wrong vote, and the station explodes. The game ends when only as many players remain as there are functional escape pods.</p>
+
+<p><strong>Start of the Round</strong><br>
+Each player receives unique character traits and a secret role. The round begins with the first player (the “captain”) revealing three traits and explaining why they should survive. They have 60 seconds. Turns proceed clockwise.</p>
+
+<p><strong>Discussion Phase</strong><br>
+After everyone has spoken, a 2-minute open discussion begins. Players accuse, defend, lie or reveal information. No voting yet — pure psychology.</p>
+
+<p><strong>Voting Phase</strong><br>
+Players vote in secret (60 seconds). The player with the most votes is eliminated (airlock). If there is a tie, a 30-second revote occurs — only tied players can be voted for. If the tie persists, all tied players are eliminated. Eliminated players can no longer speak or vote.</p>
+
+<p><strong>Catastrophes</strong><br>
+Every 2–3 rounds a random catastrophe occurs (oxygen leak, hull breach, traitor sabotage, etc.). Players must quickly vote or act to survive the event, or lose additional lives/resources.</p>
+
+<p><strong>End of the Game</strong><br>
+The game ends when the number of remaining players equals the number of available escape pods (usually half the starting crew). Survivors win. If the station explodes before that — everyone loses.
+</p>
+        </p>
+        
+       <!-- Таблиця 2×2 скріншотів -->
+    <div class="screenshots-grid">
+      <img src="assets/img/AsiaStarSelection.png" alt="Asia map" class="screenshot">
+      <img src="assets/img/StarSelectionTablet.png" alt="Tablet" class="screenshot">
+      <img src="assets/img/SpaceShipStarSelection.png" alt="Space Ship Info" class="screenshot">
+      <img src="assets/img/BunkerStarSelection.png" alt="Bunker map" class="screenshot">
+    </div>
+  </div>
+
+      <!-- Star Betrayal контент -->
+      <div class="mode-panel" id="betrayal-panel">
+        <h3>Star Betrayal</h3>
+        <p class="mode-description">
+          <p><strong>Game Objective</strong><br>
+A crew of 4 to 16 players is on a long-haul spaceship. Among them are 2–4 impostors (traitors) whose goal is to eliminate the crew without being caught. The honest crew must identify and vote out all impostors before it’s too late. If all traitors are eliminated — crew wins. If traitors outnumber or eliminate the crew — traitors win.</p>
+
+<p><strong>Day Phase (Discussion & Voting)</strong><br>
+All players discuss openly (2–3 minutes). Anyone can accuse, lie, defend. At the end of the phase, players vote to eliminate one suspect (60 seconds). The player with the most votes is ejected into space. Ties result in no elimination (or revote if you set that rule).</p>
+
+<p><strong>Night Phase (Impostor Actions)</strong><br>
+Lights go out. Impostors secretly choose one crew member to kill (sabotage, vent attack, poison). They have 30 seconds to decide. Special roles may also activate (medic saves, detective investigates, etc.).</p>
+
+<p><strong>Special Roles & Abilities</strong><br>
+- Impostor: kill, vent, sabotage systems<br>
+- Medic: protect one player from death (once per game or cooldown)<br>
+- Detective: check one player’s role each night<br>
+- Engineer: fix sabotages faster or see vents<br>
+- Traitor (hidden impostor among crew): pretends to be innocent<br>
+Custom roles can be added in lobby.</p>
+
+<p><strong>End of the Game</strong><br>
+Crew wins if all impostors are eliminated.<br>
+Impostors win if they equal or outnumber the remaining crew, or if the ship is destroyed via sabotage.</p>
+        </p>
+        <div class="screenshots-grid">
+          <!-- сюди встав скріншоти -->
+          <img src="assets/img/StarBetrayalRoleCard.png" alt="Role Card" class="screenshot" />
+          <img src="assets/img/StarBetrayalNight.png" alt="Night Phase" class="screenshot" />
+          <img src="assets/img/StarBetrayalMiniGame.png" alt="Mini Game" class="screenshot"/>
+          <img src="assets/img/Room2StarBetrayal.png" alt="Room" class="screenshot" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== КЛЮЧОВІ ОСОБЛИВОСТІ ====================== -->
+<section id="features" class="features-section">
+  <div class="container">
+    <h2 class="section-title">Key Features</h2>
+    <p class="section-subtitle">
+      Classic tabletop deduction meets 3D space horror — betrayal, survival, and chaos await.
+    </p>
+
+    <div class="features-grid">
+      <!-- Карточка 1 -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#00ffff" stroke-width="2">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+        </div>
+        <h3>Up to 16 Players Online</h3>
+        <p>Gather a big crew — support for up to 16 participants in real-time multiplayer. Perfect for Discord parties, streams and massive friend groups.</p>
+      </div>
+
+      <!-- Карточка 2 -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#ff4500" stroke-width="2">
+            <path d="M12 2v20M2 12h20"></path>
+            <circle cx="12" cy="12" r="10"></circle>
+          </svg>
+        </div>
+        <h3>Voting & Catastrophes</h3>
+        <p>Every round in Ster Selection unleashes a new disaster. Vote to decide who lives and who dies. One wrong choice — game over.</p>
+      </div>
+
+      <!-- Карточка 3 -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#ff00ff" stroke-width="2">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+        </div>
+        <h3>Betrayal & Bluffing</h3>
+        <p>In Star Betrayal one of your crew is the impostor. Lie, deceive, expose. Classic mafia tension — but in 3D space with vents and shadows.</p>
+      </div>
+
+      <!-- Карточка 4 -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#00ffff" stroke-width="2">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+        </div>
+        <h3>Custom Roles & Maps</h3>
+        <p>Create your own roles with unique abilities. Design custom stations, disasters and events. Every game feels fresh and unpredictable.</p>
+      </div>
+
+      <!-- Карточка 5 -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#00ff9d" stroke-width="2">
+            <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+            <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+          </svg>
+        </div>
+        <h3>Built-in Voice Chat</h3>
+        <p>Real-time voice chat with noise suppression. Scream, whisper, bluff — all in-game tension and chaos captured perfectly.</p>
+      </div>
+
+      <!-- Карточка 6 -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#ffd700" stroke-width="2">
+            <path d="M3 6l9-4 9 4v10c0 5-3 10-9 10s-9-5-9-10z"></path>
+            <path d="M12 12l-3 3 3 3"></path>
+          </svg>
+        </div>
+        <h3>Moral Choices & Consequences</h3>
+        <p>Every decision matters: trust or betray? Kill first or save? Branching outcomes and endings based on your actions and alliances.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== ТРЕЙЛЕР ====================== -->
+<section class="trailer-section">
+  <div class="container">
+    <div class="trailer-wrapper">
+      <!-- Заміни src на свій реальний YouTube embed -->
+      <iframe 
+        id="trailer-video"
+        class="trailer-video"
+        src="assets/img/Trailer.mp4"
+        title="Star Raker Trailer"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+
+      <!-- Кнопка Play/Pause по центру – зникає після першого кліку -->
+      <button class="trailer-control-btn" id="trailer-control">
+        <svg class="play-icon" width="140" height="140" viewBox="0 0 24 24" fill="#00ffff">
+          <path d="M8 5v14l11-7z"/>
+        </svg>
+        <svg class="pause-icon" width="140" height="140" viewBox="0 0 24 24" fill="#00ffff" style="display:none;">
+          <rect x="6" y="4" width="4" height="16" rx="2"/>
+          <rect x="14" y="4" width="4" height="16" rx="2"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Єдина підпис знизу -->
+    <p class="trailer-caption">
+      Feel the tension of cosmic horror and deduction. Ready to betray or survive?
+    </p>
+  </div>
+</section>
+
+<!-- ====================== REVIEWS / TESTIMONIALS ====================== -->
+<section id="reviews" class="reviews-section">
+  <div class="container">
+    <h2 class="section-title">What Players Are Saying</h2>
+    <p class="section-subtitle">
+      Real feedback from beta testers and early players
+    </p>
+
+    <div class="reviews-grid">
+      <!-- Review 1 -->
+      <div class="review-card">
+        <div class="review-avatar">
+          <img src="assets/img/DPiddy.jpg" alt="Player 1">
+        </div>
+        <p class="review-text">
+          "Star Betrayal is pure chaos and I love it. The bluffing is next level — I betrayed my best friend and felt zero remorse. 10/10 would backstab again."
+        </p>
+        <p class="review-author">
+          D. Piddy • 5/5
+        </p>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="review-card">
+        <div class="review-avatar">
+          <img src="assets/img/J. Apstein.png" alt="Player 2">
+        </div>
+        <p class="review-text">
+          "Ster Selection is terrifying. The voting system is brutal — I got eliminated because of one bad trait reveal. The moral choices hit hard. Masterpiece."
+        </p>
+        <p class="review-author">
+          J. Apstein • 5/5
+        </p>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="review-card">
+        <div class="review-avatar">
+          <img src="assets/img/Rock.jpg" alt="The Rock">
+        </div>
+        <p class="review-text">
+          "Finally a game where you can smell the betrayal through the screen. Voice chat + 16 players = instant classic. Can’t wait to host a SmackDown edition."
+        </p>
+        <p class="review-author">
+          The Rock • 5/5
+        </p>
+      </div>
+
+      <!-- Review 4 (нейтральний) -->
+      <div class="review-card">
+        <div class="review-avatar">
+          <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=200&q=80" alt="Player 4">
+        </div>
+        <p class="review-text">
+          "Custom roles and maps make every session unique. Played 20 games already — still discovering new strategies. Best indie deduction game of 2026."
+        </p>
+        <p class="review-author">
+          @NebulaGamer • 5/5
+        </p>
+      </div>
+
+      <!-- Review 5 -->
+      <div class="review-card">
+        <div class="review-avatar">
+          <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=200&q=80" alt="Player 5">
+        </div>
+        <p class="review-text">
+          "The voice chat is insane. You can hear the panic when a catastrophe hits. I screamed so loud my neighbors knocked on the door. Worth every second."
+        </p>
+        <p class="review-author">
+          @ScreamQueen • 5/5
+        </p>
+      </div>
+
+      <!-- Review 6 -->
+      <div class="review-card">
+        <div class="review-avatar">
+          <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=200&q=80" alt="Player 6">
+        </div>
+        <p class="review-text">
+          "Moral choices actually matter here. I betrayed my alliance to save myself — and won. Felt guilty for days. That’s how you know the game is good."
+        </p>
+        <p class="review-author">
+          @MoralVoid • 5/5
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== CTA / ФІНАЛЬНИЙ ЗАКЛИК ====================== -->
+<section id="cta" class="cta-section">
+  <div class="container">
+    <h2 class="cta-title">Ready to Betray or Survive?</h2>
+    <p class="cta-subtitle">
+      Join the chaos now — play the demo for free or grab the full game with 50% discount.<br>
+      Limited offer ends soon!
+    </p>
+
+    <div class="cta-timer">
+      <span class="timer-label">Offer ends in:</span>
+      <span class="timer-value" id="countdown">Calculating...</span>
+    </div>
+
+    <div class="cta-buttons">
+      <a href="https://your-itch-io-link.itch.io/star-raker" class="btn btn-primary btn-large">
+        PLAY DEMO FOR FREE
+      </a>
+      <a href="https://store.steampowered.com/app/YOUR_APP_ID/" class="btn btn-secondary btn-large">
+        BUY NOW -50% <span class="price">$9.99 → $4.99</span>
+      </a>
+    </div>
+
+    <div class="cta-platforms">
+      <span>Available on:</span>
+      <div class="platforms-icons">
+        <img src="assets/img/steam-icon.svg" alt="Steam">
+        <img src="assets/img/Itch-Io--Streamline-Font-Awesome.svg" alt="itch.io">
+        <img src="assets/img/discord-white-icon.svg" alt="Discord">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  
+
+  <!-- ====================== ФУТЕР ====================== -->
+<footer class="footer">
+  <div class="container">
+    <!-- Верхня частина: логотип + соцмережі -->
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo-placeholder">
+          <!-- Сюди свій реальний логотип (SVG або PNG) -->
+          <img src="assets/img/Logo.png" alt="Star Raker Logo" class="logo-img">
+        </div>
+        <span class="footer-title">STAR RAKER</span>
+      </div>
+
+      <div class="footer-social">
+        <a href="https://t.me/StarRaker" target="_blank" class="social-link" aria-label="Telegram">
+          <img src="assets/img/telegram-white-icon.svg" alt="Telegram">
+        </a>
+        <a href="https://discord.gg/StarRaker" target="_blank" class="social-link" aria-label="Discord">
+          <img src="assets/img/discord-white-icon.svg" alt="Discord">
+        </a>
+        <a href="https://x.com/StarRaker" target="_blank" class="social-link" aria-label="X">
+          <img src="assets/img/x-social-media-white-icon.svg" alt="X">
+        </a>
+        <a href="https://itch.io/profile/StarRaker" target="_blank" class="social-link" aria-label="itch.io">
+          <img src="assets/img/Itch-Io--Streamline-Font-Awesome.svg" alt="itch.io">
+        </a>
+        <a href="https://store.steampowered.com/app/StarRaker/" target="_blank" class="social-link" aria-label="Steam">
+          <img src="assets/img/steam-icon.svg" alt="Steam">
+        </a>
+      </div>
+    </div>
+
+    <!-- QR-код на Discord -->
+    <div class="footer-qr">
+      <img src="assets/img/unnamed.png" alt="Join our Discord server" class="qr-image">
+      <p>Join our Discord server</p>
+    </div>
+
+    <!-- Нижня частина: копірайт + посилання -->
+    <div class="footer-bottom">
+      <p class="copyright">
+        © 2026 Slipknot Studios, Kyiv, Ukraine. All rights reserved.
+      </p>
+      <div class="footer-links">
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/terms-of-service.html">Terms of Service</a>
+        <a href="/contact.html">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const tabs = document.querySelectorAll('.mode-tab');
+    const panels = document.querySelectorAll('.mode-panel');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // знімаємо active з усіх вкладок і панелей
+        tabs.forEach(t => t.classList.remove('active'));
+        panels.forEach(p => p.classList.remove('active'));
+
+        // додаємо active на клікнуту вкладку
+        tab.classList.add('active');
+
+        // показуємо відповідний контент
+        const mode = tab.getAttribute('data-mode');
+        document.getElementById(`${mode}-panel`).classList.add('active');
+      });
+    });
+  });
+</script>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const video = document.getElementById('trailer-video');
+    const btn = document.getElementById('trailer-control');
+    const playIcon = btn.querySelector('.play-icon');
+    const pauseIcon = btn.querySelector('.pause-icon');
+
+    let isPlaying = false;
+
+    btn.addEventListener('click', () => {
+      if (isPlaying) {
+        // пауза
+        video.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+        playIcon.style.display = 'block';
+        pauseIcon.style.display = 'none';
+      } else {
+        // відтворення
+        video.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+        playIcon.style.display = 'none';
+        pauseIcon.style.display = 'block';
+
+        // ховаємо кнопку після першого кліку
+        btn.classList.add('hidden');
+      }
+      isPlaying = !isPlaying;
+    });
+
+    // Початковий стан — пауза, кнопка видна
+    video.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+  });
+</script>
+
+<script>
+// === Живий таймер зворотного відліку ===
+// Зміни дату закінчення акції тут (формат: Рік, Місяць-1, День, Година, Хвилина, Секунда)
+const endDate = new Date(2026, 2, 31, 23, 59, 59); // 31 березня 2026, 23:59:59
+
+function updateCountdown() {
+  const now = new Date();
+  const diff = endDate - now;
+
+  if (diff <= 0) {
+    document.getElementById("countdown").textContent = "Offer ended!";
+    return;
+  }
+
+  const days    = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const hours   = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+  document.getElementById("countdown").textContent = 
+    `${days}d ${hours.toString().padStart(2,'0')}h ${minutes.toString().padStart(2,'0')}m ${seconds.toString().padStart(2,'0')}s`;
+}
+
+// Запускаємо одразу і оновлюємо кожну секунду
+updateCountdown();
+setInterval(updateCountdown, 1000);
+</script>
+
+</body>
+</html>
