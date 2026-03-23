@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" class="bi bi-map" viewBox="0 0 16 16" id="Map--Streamline-Bootstrap" height="16" width="16">
+  <desc>
+    Map Streamline Icon: https://streamlinehq.com
+  </desc>
+  <path fill-rule="evenodd" d="M15.817 0.113A0.5 0.5 0 0 1 16 0.5v14a0.5 0.5 0 0 1 -0.402 0.49l-5 1a0.5 0.5 0 0 1 -0.196 0L5.5 15.01l-4.902 0.98A0.5 0.5 0 0 1 0 15.5v-14a0.5 0.5 0 0 1 0.402 -0.49l5 -1a0.5 0.5 0 0 1 0.196 0L10.5 0.99l4.902 -0.98a0.5 0.5 0 0 1 0.415 0.103M10 1.91l-4 -0.8v12.98l4 0.8zm1 12.98 4 -0.8V1.11l-4 0.8zm-6 -0.8V1.11l-4 0.8v12.98z" stroke-width="1"></path>
+</svg>

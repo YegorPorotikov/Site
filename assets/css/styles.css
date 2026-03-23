@@ -446,9 +446,9 @@ body {
   background: rgba(0, 255, 255, 0.08);
 }
 
-.feature-icon svg {
-  width: 48px;
-  height: 48px;
+.multiplayer-icon img {
+  width: 64px;
+  height: 64px;
   stroke: currentColor;
 }
 
