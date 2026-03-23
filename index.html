@@ -10,7 +10,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Rajdhani:wght@400;500;700&display=swap" rel="stylesheet">
   
-  <!-- Твій CSS -->
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -18,13 +17,9 @@
   <!-- ====================== ХЕДЕР ====================== -->
 <header class="header">
   <div class="container">
-    <!-- Логотип + назва (логотип зліва, текст праворуч) -->
     <div class="header-brand">
       <div class="logo-placeholder">
-        <!-- Сюди встав свій реальний логотип (рекомендую SVG або PNG 64–80 px) -->
         <img src="assets/img/Logo.png" alt="Star Raker Logo" class="logo-img">
-        <!-- Якщо логотипу ще немає — тимчасовий круглий плейсхолдер -->
-        <!-- <div class="logo-circle"></div> -->
       </div>
       <a href="#" class="site-title">STAR RAKER</a>
     </div>
@@ -44,24 +39,23 @@
 
   <!-- ====================== HERO ====================== -->
   <section id="home" class="hero">
-    <div class="hero-overlay"></div> <!-- для градієнту/темного оверлею -->
+    <div class="hero-overlay"></div> 
     
     <div class="container hero-content">
       <h1 class="hero-title">STAR RAKER</h1>
       <p class="hero-subtitle">
-        3D Бункер + Мафія в космосі
+        3D Bunker + Mafia in Space
       </p>
       
       <div class="hero-buttons">
         <a href="#" class="btn btn-primary">
-          ГРАТИ DEMO БЕЗКОШТОВНО
+          PLAY DEMO FOR FREE
         </a>
         <a href="#" class="btn btn-secondary">
-          КУПИТИ ЗАРАЗ <span class="discount">-50%</span>
+          BUY NOW <span class="discount">-50%</span>
         </a>
       </div>
 
-      <!-- Маленькі іконки платформ (опціонально) -->
       <div class="hero-platforms">
         <img src="assets/img/steam-icon.svg" alt="Steam" width="36">
         <img src="assets/img/Itch-Io--Streamline-Font-Awesome.svg" alt="itch.io" width="36">
@@ -146,7 +140,6 @@ Crew wins if all impostors are eliminated.<br>
 Impostors win if they equal or outnumber the remaining crew, or if the ship is destroyed via sabotage.</p>
         </p>
         <div class="screenshots-grid">
-          <!-- сюди встав скріншоти -->
           <img src="assets/img/StarBetrayalRoleCard.png" alt="Role Card" class="screenshot" />
           <img src="assets/img/StarBetrayalNight.png" alt="Night Phase" class="screenshot" />
           <img src="assets/img/StarBetrayalMiniGame.png" alt="Mini Game" class="screenshot"/>
@@ -247,7 +240,6 @@ Impostors win if they equal or outnumber the remaining crew, or if the ship is d
 <section class="trailer-section">
   <div class="container">
     <div class="trailer-wrapper">
-      <!-- Заміни src на свій реальний YouTube embed -->
       <iframe 
         id="trailer-video"
         class="trailer-video"
@@ -258,7 +250,6 @@ Impostors win if they equal or outnumber the remaining crew, or if the ship is d
         allowfullscreen>
       </iframe>
 
-      <!-- Кнопка Play/Pause по центру – зникає після першого кліку -->
       <button class="trailer-control-btn" id="trailer-control">
         <svg class="play-icon" width="140" height="140" viewBox="0 0 24 24" fill="#00ffff">
           <path d="M8 5v14l11-7z"/>
@@ -270,7 +261,6 @@ Impostors win if they equal or outnumber the remaining crew, or if the ship is d
       </button>
     </div>
 
-    <!-- Єдина підпис знизу -->
     <p class="trailer-caption">
       Feel the tension of cosmic horror and deduction. Ready to betray or survive?
     </p>
@@ -325,7 +315,7 @@ Impostors win if they equal or outnumber the remaining crew, or if the ship is d
         </p>
       </div>
 
-      <!-- Review 4 (нейтральний) -->
+      <!-- Review 4 -->
       <div class="review-card">
         <div class="review-avatar">
           <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=200&q=80" alt="Player 4">
@@ -411,7 +401,6 @@ Impostors win if they equal or outnumber the remaining crew, or if the ship is d
     <div class="footer-top">
       <div class="footer-brand">
         <div class="logo-placeholder">
-          <!-- Сюди свій реальний логотип (SVG або PNG) -->
           <img src="assets/img/Logo.png" alt="Star Raker Logo" class="logo-img">
         </div>
         <span class="footer-title">STAR RAKER</span>
@@ -436,7 +425,6 @@ Impostors win if they equal or outnumber the remaining crew, or if the ship is d
       </div>
     </div>
 
-    <!-- QR-код на Discord -->
     <div class="footer-qr">
       <img src="assets/img/unnamed.png" alt="Join our Discord server" class="qr-image">
       <p>Join our Discord server</p>
@@ -445,7 +433,7 @@ Impostors win if they equal or outnumber the remaining crew, or if the ship is d
     <!-- Нижня частина: копірайт + посилання -->
     <div class="footer-bottom">
       <p class="copyright">
-        © 2026 Slipknot Studios, Kyiv, Ukraine. All rights reserved.
+        © 2026 Genessis Games. All rights reserved.
       </p>
       <div class="footer-links">
         <a href="/privacy-policy.html">Privacy Policy</a>
@@ -463,7 +451,6 @@ Impostors win if they equal or outnumber the remaining crew, or if the ship is d
 
     tabs.forEach(tab => {
       tab.addEventListener('click', () => {
-        // знімаємо active з усіх вкладок і панелей
         tabs.forEach(t => t.classList.remove('active'));
         panels.forEach(p => p.classList.remove('active'));
 
@@ -513,8 +500,7 @@ Impostors win if they equal or outnumber the remaining crew, or if the ship is d
 
 <script>
 // === Живий таймер зворотного відліку ===
-// Зміни дату закінчення акції тут (формат: Рік, Місяць-1, День, Година, Хвилина, Секунда)
-const endDate = new Date(2026, 2, 31, 23, 59, 59); // 31 березня 2026, 23:59:59
+const endDate = new Date(2026, 2, 31, 23, 59, 59);
 
 function updateCountdown() {
   const now = new Date();
